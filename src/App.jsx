@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import ToDoList from './TodoList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <h1>First React Project</h1>
-    </>
+    <div>
+
+      <ToDoList />
+
+    </div>
   )
 }
 
