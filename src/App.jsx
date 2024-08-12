@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import ToDoList from './TodoList'
+import ToDoInput from './TodoInput'
 
 function App() {
 
   return (
     <div>
 
-      <ToDoList />
+      <ToDoInput />
 
     </div>
   )
