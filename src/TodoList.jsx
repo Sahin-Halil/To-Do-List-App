@@ -5,11 +5,8 @@ function ToDoList(){
     return (
         <div>
             <h1>My To Do List</h1>
-            <ul>
-                <li>Learn React</li>
-                <li>Build something awesome</li>
-                <li>Create this to do list app</li>
-            </ul>
+            <input type="text" placeholder="Enter a task" />
+            <button>Add</button>
         </div>
     )
 }
