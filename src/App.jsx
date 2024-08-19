@@ -10,7 +10,7 @@ function App() {
     <div>
 
       <ToDoInput inputValue = {inputValue} setInputValue = {setInputValue}/>
-      <ToDoList />
+      <ToDoList inputValue = {inputValue}/>
 
     </div>
   )
