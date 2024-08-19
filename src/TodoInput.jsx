@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import './App.css'
 
-function ToDoInput(){
-    const [inputValue, setInputValue] = useState('');
+
+function ToDoInput({inputValue, setInputValue}){
 
     function handleInputChange(event){
         setInputValue(event.target.value);
