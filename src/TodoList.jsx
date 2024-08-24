@@ -23,9 +23,9 @@ function ToDoList( {inputValue} ){
 
     return (
         <div>
-            <button onClick={(e) => handleButtonClick(e)}>Add</button>
-            <ul>
-                {list.map((data, index) => { return <li key={index}>{data} <button onClick={(e) => handleDeleteClick(e, index)}>X</button> </li> })}
+            <button className='Main addButton' onClick={(e) => handleButtonClick(e)}>Add</button>
+            <ul className='itemList'>
+                {list.map((data, index) => { return <li className='doItems' key={index}>{data} <button className='deleteButton' onClick={(e) => handleDeleteClick(e, index)}>X</button> </li> })}
             </ul>
         </div>  
     )

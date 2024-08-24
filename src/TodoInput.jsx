@@ -9,8 +9,8 @@ function ToDoInput({inputValue, setInputValue}){
 
     return (
         <div>
-            <h1>My To Do List</h1>
-            <input type="text" value={inputValue} onChange={handleInputChange} />
+            <h1 className="Title">My To Do List</h1>
+            <input type="text" className='Main textBar' value={inputValue} onChange={handleInputChange} />
         </div>
     )
 }

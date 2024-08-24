@@ -1,1 +1,77 @@
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    font-weight: 1000;
+    margin-bottom: 30px;
+}
+
+.Main{
+    display: flex;
+    margin: 0 auto;
+}
+
+.textBar{
+    width: 300px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.addButton{
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.itemList {
+    list-style: none; 
+    padding: 10px; 
+}
+
+.doItems {
+    position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px; 
+    margin-left: 200px;
+}
+
+.doItems::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px; 
+    background-color: black; 
+    border-radius: 50%; 
+}
+
+.doItems:hover {
+    background-color: #f9f9f9;
+}
+
+.deleteButton {
+    padding: 5px; 
+    width: 30px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+}
+
