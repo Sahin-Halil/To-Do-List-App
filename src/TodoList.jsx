@@ -7,18 +7,25 @@ function ToDoList( {inputValue} ){
     
     useEffect(() => {
         localStorage.setItem("myList", JSON.stringify(list));
-        console.log("list updated");    
     }, [list]);
 
     function handleButtonClick(event){
+        if (inputValue === "") {
+            return;
+        }
         setList([...list, inputValue]);
+    }
+
+    function handleDeleteClick(event, index){
+        const newList = list.filter((data, i) => i !== parseInt(index));
+        setList(newList);
     }
 
     return (
         <div>
             <button onClick={(e) => handleButtonClick(e)}>Add</button>
             <ul>
-                {list.map((data, index) => { return <li key={index}>{data}</li> })}
+                {list.map((data, index) => { return <li key={index}>{data} <button onClick={(e) => handleDeleteClick(e, index)}>X</button> </li> })}
             </ul>
         </div>  
     )
